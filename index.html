@@ -11,6 +11,39 @@
 				display: none;
 			}
 		</style>-->
+		<style>
+			.resume-dropdown {
+				position: relative;
+				display: inline-block;
+			}
+
+			.resume-dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #2a2f4a;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+				border-radius: 4px;
+				right: 0;
+			}
+
+			.resume-dropdown-content a {
+				color: white;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+			}
+
+			.resume-dropdown-content a:hover {
+				background-color: #3a3f5a;
+			}
+
+			.resume-dropdown:hover .resume-dropdown-content {
+				display: block;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -450,7 +483,13 @@
 						<li><a href="https://github.com/ahmed-lasmar" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://www.linkedin.com/in/ahmed-lasmar/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 						<li><a href="mailto:ahmed.tn.lasmar@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="Docs/Ahmed_Lasmar_Resume.pdf" class="icon solid fa-file-pdf"><span class="label">Resume</span></a></li>
+						<li class="resume-dropdown">
+							<a href="#" class="icon solid fa-file-pdf"><span class="label">Resume</span></a>
+							<div class="resume-dropdown-content">
+								<a href="Docs/Ahmed_Lasmar_Resume.pdf">English Resume</a>
+								<a href="Docs/Ahmed_Lasmar_CV-FR.pdf">French CV</a>
+							</div>
+						</li>
 
 						<!--<li><a href="#" class="toggle-button">CV</a></li>-->
 					</ul>

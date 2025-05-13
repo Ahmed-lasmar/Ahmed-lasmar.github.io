@@ -1,0 +1,266 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CV Développeur
+% Classe LaTeX
+% Version 2.0 (12/10/23)
+%
+% Cette classe provient de :
+% http://www.LaTeXTemplates.com
+%
+% Auteurs :
+% Omar Roldan
+% Basé sur un modèle de Jan Vorisek (jan@vorisek.me)
+% Basé sur un modèle de Jan Küster (info@jankuester.com)
+% Modifié pour LaTeX Templates par Vel (vel@LaTeXTemplates.com)
+%
+% Licence :
+% La Licence MIT (voir le fichier LICENSE inclus)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PAQUETS ET AUTRES CONFIGURATIONS DU DOCUMENT
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Taille de police par défaut, valeurs recommandées de 8-12pt
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+\usepackage{comment}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITRE ET INFORMATIONS DE CONTACT
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Requis pour l'alignement vertical des minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Ahmed LASMAR}}}} % Prénom
+	
+	\vspace{6pt}
+	
+	{\Large Ingénieur Logiciel} % Titre professionnel ou poste actuel
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% de la largeur de la page pour la première rangée d'icônes
+	\vspace{-\baselineskip} % Requis pour l'alignement vertical des minipages
+	
+	% Le premier paramètre est le nom de l'icône FontAwesome, le second est la taille de la boîte et le troisième est le texte
+    \icon{Phone}{11}{+216 24 330 340}\\
+    \icon{MapMarker}{11}{Tunis, Tunisie}\\
+    \icon{Globe}{11}{\href{https://ahmed.lasmar.tn}{Portfolio}}\\
+
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% de la largeur de la page pour la deuxième rangée d'icônes
+	\vspace{-\baselineskip} % Requis pour l'alignement vertical des minipages
+	
+	\icon{Envelope}{11}{\href{mailto:email@example.com}{ahmed.tn.lasmar@gmail.com}}\\	
+    \icon{LinkedinSquare}{11}{\href{https://tn.linkedin.com/in/ahmed-lasmar/fr}{LinkedIn}}\\    
+    \icon{Github}{11}{\href{https://github.com/Ahmed-lasmar}{GitHub}}\\
+
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, COMPÉTENCES ET TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Résumé}
+\vspace{-6pt}
+
+Bonjour, je m'appelle Ahmed Lasmar, je suis un ingénieur logiciel passionné par le développement d'applications innovantes et impactantes. Je me spécialise dans la création de solutions efficaces et évolutives, et je m'efforce continuellement d'améliorer mes compétences et mes connaissances pour répondre aux exigences évolutives de l'industrie technologique.
+
+%----------------------------------------------------------------------------------------
+%	LANGUES
+%----------------------------------------------------------------------------------------
+\cvsect{Langues}
+\vspace{-6pt}    
+\hspace{25mm} \textbf{ Arabe} - langue maternelle, \textbf{ Français} - Courant, \textbf{Anglais} - Courant
+\vspace{10pt}
+
+%----------------------------------------------------------------------------------------
+%	Compétences
+%----------------------------------------------------------------------------------------
+\cvsect{Compétences}
+\vspace{-6pt}
+{\small
+\begin{itemize}
+    \leftskip=10mm
+    \item [--]  \textbf{Langages de Programmation :} Java, JavaScript, C, C#, PHP, HTML, CSS
+    \item [--]  \textbf{Frameworks \& Bibliothèques :} Spring Boot, Angular, MERN (MongoDB, Express, React, Node.js)
+    \item [--]  \textbf{Bases de données :} MySQL, PostgreSQL
+    \item [--]  \textbf{Outils \& Plateformes :} GitLab, GitHub, ClickUp
+    \item [--] \textbf{Méthodologies de Développement :} Agile (Scrum), Cascade
+    \item [--] \textbf{Compétences Clés :} Résolution de problèmes, Pensée critique, Communication efficace, Collaboration \& Travail d'équipe, Adaptabilité \& Apprentissage rapide
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	Certifications
+%----------------------------------------------------------------------------------------
+\cvsect{Certifications}
+\begin{entrylist}
+\entry
+            {2022}
+            {\href{https://www.credly.com/badges/a03763d9-188a-4ce3-af97-dc957f7e35e9?source=linked_in_profile}{Introduction aux Réseaux ~\faExternalLink}}
+		{CISCO}{}
+\end{entrylist}  
+
+%----------------------------------------------------------------------------------------
+%	Formation
+%----------------------------------------------------------------------------------------
+\vspace{-20pt}
+\cvsect{Formation}
+\begin{entrylist}
+\entry          
+		{2021 - 2024}
+		{Cursus Ingénieur}
+		{\href{https://esprit.tn/}{ESPRIT ~\faExternalLink}}
+		{Cursus ingénieur avec spécialisation en Génie Logiciel}
+\entry
+	    {2016 - 2019}
+		{Licence en Maintenance et Diagnostic Automobile}
+        {\href{https://esprit.tn/}{ISET Nabeul ~\faExternalLink }}
+		{Obtention d'une Licence Académique en Maintenance et Diagnostic Automobile}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Projets
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Projets}
+\begin{entrylist}
+\entry
+        {1/2024 – 7/2024 \\\footnotesize{8 Mois}}   
+		{EasyReport}
+        {\href{https://www.tmi.com.tn/fr/accueil/}{TMI Tunisia ~\faExternalLink}}
+		{{\vspace{-5pt}}
+                 \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                 \item Développement d'EasyReport, une application web de reporting optimisée utilisant la stack MEAN (MongoDB, Express.js, Angular, Node.js),
+                 \item conçue pour une gestion efficace des données et une interface utilisateur fonctionnelle.
+                \end{itemize}}
+                
+\entry       
+        {2023 \\\footnotesize{}}
+        {\href{https://github.com/yessin007/CocoMarket_Spring_Angular}{COCO Market - E-Commerce (Spring Boot, Angular) ~\faExternalLink}}
+		{\href{https://esprit.tn/}{ESPRIT}}
+		{{\vspace{-5pt}}
+                 \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                 \item Une application pour la gestion des annonces, l'amélioration de la visibilité, la découverte
+                d'opportunités, l'analyse de données et l'expansion des marchés.
+                \end{itemize}}
+                
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPÉRIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Expérience}
+\begin{entrylist}
+\entry
+        {9/2024 -- présent \\\footnotesize{}}
+		{Ingénieur Logiciel}
+		{\href{https://www.linkedin.com/company/digitalpetroleum/}{DIGITAL PETROLEUM ~\faExternalLink }}
+		{\vspace{-5pt}
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                    \item Développement et maintenance de la plateforme numérique principale de DIGITAL PETROLEUM, une solution web complète pour la surveillance en temps réel, la gestion et l'analyse des actifs énergétiques.
+                    \item Le système comprend un backend robuste construit avec TypeScript, Express.js et MongoDB, fournissant des API RESTful sécurisées pour la gestion des utilisateurs, l'intégration des appareils et le traitement des données.
+                    \item Le frontend est implémenté en utilisant React et Material-UI, offrant un tableau de bord interactif pour la visualisation des données, les alertes et les insights opérationnels. La plateforme prend en charge les graphiques avancés, les rapports et le contrôle d'accès basé sur les rôles, et est déployée en utilisant Docker et Kubernetes pour des opérations évolutives et prêtes pour le cloud.
+                    \item Collaboration sur les pipelines CI/CD, la documentation API (Swagger) et suivi des meilleures pratiques en matière de qualité de code et de workflows d'équipe.
+                    \vspace{0,25cm}
+\item \underline{Technologies Clés :} TypeScript, Node.js, Express, MongoDB, React, Material-UI, Docker, Kubernetes, CI/CD, API REST, Visualisation de Données, Contrôle d'Accès Basé sur les Rôles
+                \end{itemize}}
+
+\entry
+        {6/2019 -- 7/2021 \\\footnotesize{}}
+		{Gestionnaire de FabLab}
+		{\href{https://www.facebook.com/FabLab.Solidaire}{Fablab Solidaire~\faExternalLink }}
+		{\vspace{-5pt}
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                    \item En tant que Gestionnaire de FabLab, j'ai supervisé les opérations quotidiennes, géré l'équipement, assuré la formation des utilisateurs et favorisé l'innovation dans un laboratoire de fabrication numérique.
+                \end{itemize}}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Expérience Associative
+%----------------------------------------------------------------------------------------
+
+\cvsect{Expérience Associative}
+\begin{entrylist}
+\entry
+        {2005 -- présent \\\footnotesize{}}
+		{Membre}
+		{\href{https://www.facebook.com/AJSTunisie}{l'Association Jeunesse et Sciences de Tunisie ~\faExternalLink}}
+		{\vspace{-5pt}
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                    \item Le "Mouvement Jeunesse et Sciences", initié par des intellectuels en 1959,
+                    est né d'un manque reconnu d'engagement scientifique et technique
+                    dans les associations existantes.
+                \end{itemize}}
+
+\entry
+        {11/2019 \\\footnotesize{}}
+		{Participant}
+		{\href{https://www.unodc.org/dohadeclaration/en/news/2019/11/hacking-for-justice--impressive-young-coders-compete-at-world-bank-global-hackathon.html}{Prix du Public au Global #Hackathon4Justice | Washington D.C, USA ~\faExternalLink }}
+		{\vspace{-5pt}
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                    \item L'ONUDC s'est associé à la Banque Mondiale et Africa Teen Geeks pour le hackathon.
+                \end{itemize}}
+
+\entry
+        {2015 \\\footnotesize{}}
+		{Co-fondateur}
+		{\href{https://www.fablabs.io/labs/solidaire}{Fab Lab Solidaire | Tunisie ~\faExternalLink }}
+		{\vspace{-5pt}
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                    \item Fab Lab Solidaire : L'Association Jeunesse et Sciences de Tunisie s'unit pour la recherche éducative et l'habitat.
+                \end{itemize}}
+                
+\entry
+        {2009 -- 2015 \\\footnotesize{}}
+		{Participant}
+		{\href{}{Expo-Sciences international "ESI"}}
+		{\vspace{-5pt}
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                    \item Participation aux projets scientifiques lors des expositions internationales ESI :
+                    \begin{itemize}
+                       \item ESI 2009 (Tunis, Tunisie)
+                        \item ESI 2013 (Abu Dhabi, Émirats Arabes Unis)
+                        \item ESI 2015 (Bruxelles, Belgique)
+                        \item ESI présente des projets STEAM diversifiés par des jeunes du monde entier.
+                    \end{itemize}
+                \end{itemize}}
+
+\entry
+        {2014 -- 2018 \\\footnotesize{}}
+		{Équipe}
+		{\href{https://tunirobots.com/}{TUNIROBOTS | Tunis, Tunisie ~\faExternalLink }}
+		{\vspace{-5pt}
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                    \item TUNIROBOTS : La Journée Nationale Tunisienne de Robotique célèbre
+                        annuellement la science et la technologie, visant à populariser la robotique,
+                        mettre en valeur les talents locaux et internationaux, et obtenir une reconnaissance
+                        sur la scène mondiale.
+                \end{itemize}}
+
+\entry
+        {4/2017 -- 6/2019 \\\footnotesize{}}
+		{Président}
+		{\href{https://www.facebook.com/ClubTunivisionsISETN}{Club Tunivisions ISET Nabeul | Nabeul, Tunisie ~\faExternalLink }}
+		{\vspace{-5pt}
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                    \item Établi dans plus de 130 universités, avec un réseau de plus
+                            de 4000 membres, Tunivisions ISET Nabeul Carthage est la
+                            référence des clubs de la fondation. C'est le premier réseau qui
+                            construit des partenariats entre le monde professionnel et le monde académique.
+                            Notre Club vise à promouvoir l'activité de l'ISET Nabeul dans le magazine
+                            papier/web, à créer des événements et des conférences soutenus
+                            par les médias Tunivisions et à développer des actions de coaching et
+                            de développement personnel.
+                \end{itemize}}
+                
+\end{entrylist}
+
+\end{document}
